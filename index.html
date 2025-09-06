@@ -2,41 +2,150 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-direction: column
-            height: 200vh;
-            margin: 0;
-        }
-        p {
-           justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-direction: column
-            height: 200vh;
-            margin-right: 50px;
-            margin-left: 50px;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
         }
     </style>
-    <title>Flutter MVC</title>
 </head>
-<body>
-<h1>Flutter MVVM Base Project</h1>
-<h2>(Model-View-ViewModel)</h2>
-<p>This is a base project for a any kind of Flutter application, following the MVVM architecture.</p>
-<p>To get started, download the zip, extract it, and run the <strong><code>flutter pub get</code></strong> command. Then change the package name and app name according to your project requirements.</p>
-<p>This base project includes enhancements and improvements such as handling common internet connection issues, easy-to-use local storage, common loading views, image loading with a shimmer effect, and more things comes in a easy way</p>
-<p><strong>Project Link.</strong> <a  href="https://github.com/SAKSHAM-flutter/flutter_mvc" target="_blank">Redirection</a>.</p>
-<a href="https://in.linkedin.com/in/sakshamjii" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin Profile" class="icon" height="30" hspace="10">
-</a>
-<a href="https://github.com/saksham-flutter" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github Profile" class="icon" height="30">
-</a>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">Your Name</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors">Projects</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition-colors">Skills</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="container mx-auto px-4 py-16 md:py-24 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                Full-Stack <span class="text-indigo-600">Flutter Developer</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8">
+                Crafting beautiful and performant cross-platform applications for mobile, web, and desktop with Flutter.
+            </p>
+            <div class="space-x-4">
+                <a href="#projects" class="inline-block bg-indigo-600 text-white font-medium py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transition-colors">
+                    View My Work
+                </a>
+                <a href="#contact" class="inline-block bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-full hover:bg-gray-300 transition-colors">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Featured Projects</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                        <img src="https://placehold.co/600x400/5b21b6/ffffff?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Project Title 1</h3>
+                            <p class="text-gray-600 mb-4">A brief description of your project. Mention the key features and technologies used, highlighting the Flutter framework's role.</p>
+                            <a href="#" class="inline-block text-indigo-600 hover:underline font-medium">View Project →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Project Title 2</h3>
+                            <p class="text-gray-600 mb-4">Describe the second project in detail. Talk about your role and the problem it solved, emphasizing your multi-platform experience.</p>
+                            <a href="#" class="inline-block text-indigo-600 hover:underline font-medium">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-50 rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                        <img src="https://placehold.co/600x400/059669/ffffff?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Project Title 3</h3>
+                            <p class="text-gray-600 mb-4">Explain your third project. This could be a personal project or a collaboration. Highlight any unique challenges or solutions you implemented.</p>
+                            <a href="#" class="inline-block text-indigo-600 hover:underline font-medium">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container mx-auto px-4 py-16 md:py-24">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">My Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center">
+                <!-- Skill 1 -->
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.svg" alt="Flutter" class="w-16 h-16 mb-4">
+                    <span class="font-medium">Flutter</span>
+                </div>
+                <!-- Skill 2 -->
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" alt="Dart" class="w-16 h-16 mb-4">
+                    <span class="font-medium">Dart</span>
+                </div>
+                <!-- Skill 3 -->
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Swift_logo_colour.svg" alt="iOS" class="w-16 h-16 mb-4">
+                    <span class="font-medium">iOS Development</span>
+                </div>
+                <!-- Skill 4 -->
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android" class="w-16 h-16 mb-4">
+                    <span class="font-medium">Android Development</span>
+                </div>
+                <!-- Skill 5 -->
+                <div class="flex flex-col items-center bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="w-16 h-16 mb-4">
+                    <span class="font-medium">React</span>
+                </div>
+                <!-- You can add more skills here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gray-800 text-white py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Connect</h2>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+                    I'm currently open to new opportunities. Feel free to reach out and say hello!
+                </p>
+                <a href="mailto:your.email@example.com" class="inline-block bg-indigo-600 text-white font-medium py-3 px-6 rounded-full shadow-lg hover:bg-indigo-700 transition-colors">
+                    Email Me
+                </a>
+                <div class="mt-8 space-x-4">
+                    <!-- Update these with your real URLs -->
+                    <a href="https://github.com/saksham-flutter" class="text-gray-400 hover:text-white transition-colors">GitHub</a>
+                    <a href="https://in.linkedin.com/in/sakshamjii" class="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-6 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
